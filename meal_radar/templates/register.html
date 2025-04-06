@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Register</h1>
+<form method="POST" action="{{ url_for('register') }}">
+    <!-- Lauki, kas jāaizpilda piereģistrējotes sistēmai (lietotājvārds un parole)) -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <!-- Iesniegšanas poga -->
+    <button type="submit">Register</button>
+</form>
+
+<!-- Kļūdas paziņojums, ja reģistrēšanās sistēmā bija neveiksmīga -->
+{% if error %}
+    <p class="error">{{ error }}</p>
+{% endif %}
+{% endblock %}

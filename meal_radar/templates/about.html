@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="right-container">
+    <!-- Apraksts -->
+    <h2>About MealRadar</h2>
+    <p>
+        MealRadar helps you plan healthy meals with ease. Simply enter the food items you’d like to include, 
+        and MealRadar will suggest meals that contain those ingredients along with their nutrient breakdown. 
+        By adjusting the meal quantities, you can customize your intake to meet your daily nutritional goals.
+    </p>
+    <p>
+        MealRadar uses Finnish Institute of Health and Welfare, Fineli, data as a basis of meals and nutrients intake.
+    </p>
+    <p>
+        Nutritional percentages are calculated based on the following
+        <strong>Reference Intakes for Energy and Selected Nutrients for Adults (EU regulation No 1169/2011):</strong>
+    </p>
+    <!-- Tabula -->
+    <table>
+        <thead>
+            <tr>
+                <th>Energy or Nutrient</th>
+                <th>Reference Intake</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Energy</td>
+                <td>8,400 kJ / 2,000 kcal</td>
+            </tr>
+            <tr>
+                <td>Total Fat</td>
+                <td>70 g</td>
+            </tr>
+            <tr>
+                <td>Saturates</td>
+                <td>20 g</td>
+            </tr>
+            <tr>
+                <td>Carbohydrate</td>
+                <td>260 g</td>
+            </tr>
+            <tr>
+                <td>Sugars</td>
+                <td>90 g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>50 g</td>
+            </tr>
+            <tr>
+                <td>Salt</td>
+                <td>6 g</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
